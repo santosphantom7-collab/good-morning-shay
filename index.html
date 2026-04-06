@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Good Morning Shay 🕷️</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top, #1a1a1a, #000);
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .web {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('https://i.imgur.com/7vQZ6Qk.png');
+        opacity: 0.05;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        color: #e62429;
+        font-size: 3em;
+        text-shadow: 0 0 15px rgba(230,36,41,0.7);
+    }
+
+    .message {
+        max-width: 600px;
+        margin: auto;
+        font-size: 1.2em;
+        line-height: 1.6;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 2s forwards 1s;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .spidey {
+        font-size: 5em;
+        animation: swing 3s infinite ease-in-out;
+        display: inline-block;
+    }
+
+    @keyframes swing {
+        0% { transform: rotate(-10deg); }
+        50% { transform: rotate(10deg); }
+        100% { transform: rotate(-10deg); }
+    }
+
+    .button {
+        margin-top: 30px;
+        padding: 12px 25px;
+        background: #e62429;
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .button:hover {
+        background: #ff3b3f;
+        transform: scale(1.05);
+    }
+
+    .secret {
+        display: none;
+        margin-top: 20px;
+        font-style: italic;
+        color: #ff4d6d;
+    }
+</style>
+</head>
+<body>
+
+<div class="web"></div>
+
+<div class="container">
+    <div class="spidey">🕷️</div>
+    <h1>Good Morning, Shay</h1>
+
+    <div class="message">
+        So… while the city wakes up, stretching and pretending it has its life together…<br><br>
+
+        Just know this:<br>
+        your friendly neighborhood Spider-Man?<br>
+        Yeah… I’m here.<br><br>
+
+        Not swinging past.<br>
+        Not visiting.<br>
+        Not “checking in.”<br><br>
+
+        I’m here here.<br><br>
+
+        The kind of here that sticks.<br>
+        The kind that doesn’t disappear when things get complicated.<br>
+        The kind that keeps coming back… even when you try to push it away 😉<br><br>
+
+        And Shay… let me just say this carefully…<br><br>
+
+        In 14 days — exactly two weeks from now —<br>
+        you’re not going to be wondering where I stand.<br><br>
+
+        You’re going to feel it.<br>
+        You’re going to know it.<br><br>
+
+        And if I’m doing this right…<br>
+        you might just be screaming my name 😏🕷️<br><br>
+
+        So take your time.<br>
+        Pretend you’re not already smiling at this.<br><br>
+
+        I’ll be right here…<br>
+        patiently…<br>
+        dangerously…<br>
+        yours.
+    </div>
+
+    <button class="button" onclick="revealSecret()">Tap me, Shay</button>
+
+    <div class="secret" id="secret">
+        Careful… every time you click something like this,<br>
+        you get pulled a little deeper into my web 🕸️😉
+    </div>
+</div>
+
+<script>
+function revealSecret() {
+    document.getElementById("secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
